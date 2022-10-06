@@ -1,8 +1,8 @@
 # crontab
-
-## pull data once a day (don’t care about what time) 
-- 0 8 * * *
+## create python file with json file
+## pull data once a day 
+- 0 8 * * * python3 /crontab/crontab_read.py
 ## pull data every Sunday night at 10:00pm 
-- 0 22 * * SUN
+- 0 22 * * SUN python3 /crontab/crontab_read.py
 ## pull data at the end of every quarter  
-- 0 0 31 */3 * 
+- 0 0 1 */3 * python3 /crontab/crontab_read.py
