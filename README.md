@@ -6,3 +6,4 @@
 - 0 22 * * SUN python3 /crontab/crontab_read.py
 ## pull data at the end of every quarter  
 - 0 0 1 */3 * python3 /crontab/crontab_read.py
+!
