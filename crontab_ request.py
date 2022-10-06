@@ -18,7 +18,7 @@ data = response_API.text
 # put data in json format
 json.loads(data)
 # you can also load in the data with pd.read_json
-# df1 = pd.read_json('https://data.cdc.gov/api/views/b36e-ru3r/rows.json?accessType=DOWNLOAD')
+# df1 = pd.read_json('https://healthdata.gov/resource/aitj-yx37.json')
 
 # get current working directory
 cwd = os.getcwd()
@@ -33,8 +33,9 @@ now = time.time()
 nowStr = time.strftime("%Y-%m-%d_%H:%M:%S", time.localtime(now))
 
 # create a new file in the current working directory
-with open(cwd + '/data/crontab_request' + nowStr + '.csv', 'w') as f:
+with open(cwd + '/crontab_request' + nowStr + '.csv', 'w') as f:
     f.write(str(data))
 
+# with open(cwd + '/home/brittany/crontab/crontab_request' + nowStr + '.csv', 'w') as f:f.write(str(data))
 
     

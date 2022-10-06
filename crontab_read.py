@@ -24,5 +24,7 @@ now = time.time()
 nowStr = time.strftime("%Y-%m-%d_%H:%M:%S", time.localtime(now))
 
 # create a new file in the current working directory
-with open(cwd + '/data/crontab_read' + nowStr + '.csv', 'w') as f:
+with open(cwd + '/crontab_read' + nowStr + '.csv', 'w') as f:
     f.write(str(data))
+
+# with open(cwd + '/home/brittany/crontab/crontab_read' + nowStr + '.csv', 'w') as f:f.write(str(data))
