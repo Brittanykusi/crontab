@@ -21,4 +21,5 @@
   - pull data every Sunday night at 10:00pm | 0 22 * * SUN /usr/bin/python3/ home/brittany/crontab/crontab_read.py > home/brittany/crontab/log.txt 2>&1 &
   - pull data at the end of every quarter  | 0 0 1 */3 * /usr/bin/python3/ home/brittany/crontab/crontab_read.py > home/brittany/crontab/log.txt 2>&1 &
   - ctrl + o --> enter --> ctrl + o
+  - to see the automated file generate | ``` ls -l ```
 
